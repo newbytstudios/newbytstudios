@@ -102,13 +102,19 @@
 }
 
       
-     .comingsoon {
+     .comingsoon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.comingsoon {
   font-family: 'AudioNugget';
-  font-size: 5rem;
+  font-size: clamp(2rem, 8vw, 5rem);
   text-align: center;
-  margin-top: 15%;
-  margin-bottom: 50%;
-  padding: 0 1rem;
   background: linear-gradient(135deg, #d4d4d4 0%, #ffffff 30%, #a6a6a6 45%, #1a1a1a 60%, #ffffff 80%, #888888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,7 +125,10 @@
     0 4px 4px #333;
   animation: shine 4s infinite linear;
   background-size: 400%;
+  width: 100%;
+  max-width: 900px;
 }
+
 
               
       
@@ -138,7 +147,10 @@
   
     <div class="content">
     <h1 class="header">NewByt</h1>
-    <h1 class="comingsoon">Coming Soon</h1>
+    <div class="comingsoon-wrapper">
+  <h1 class="comingsoon">Coming Soon</h1>
+</div>
+
   </div>
     
   
